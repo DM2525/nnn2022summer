@@ -2,6 +2,8 @@
  * 触る！つむぎちゃんWEB
  * 製作者：D.M (@DM29181979)
  * 製作日：2022/08/06
+ * 動くWEBページコンテスト2022夏　応募作品。
+ * (https://progedu.github.io/webappcontest/2022/summer/entry/index.html)
  * お借りした素材：
  * BGM：https://youtu.be/8wdgZN2yCTU
  * 画像：春日部つむぎ公式素材(改変) https://tsukushinyoki10.wixsite.com/ktsumugiofficial
