@@ -1,4 +1,4 @@
-# 触る！つむぎちゃんWEB
+# 触る！春日部つむぎちゃんWEB
 https://dm2525.github.io/nnn2022summer/
 
 製作者：D.M(https://twitter.com/DM29181979)  
