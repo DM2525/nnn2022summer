@@ -1,7 +1,18 @@
 /**
- * ソースの構成
- * 音を
+ * 触る！つむぎちゃんWEB
+ * 製作者：D.M (@DM29181979)
+ * 製作日：2022/08/06
+ * お借りした素材：
+ * BGM：https://youtu.be/8wdgZN2yCTU
+ * 画像：春日部つむぎ公式素材(改変) https://tsukushinyoki10.wixsite.com/ktsumugiofficial
+ * 利用規約：
+ * ・バグ等ありましたらご連絡ください。
+ * ・プログラム単体はご自由にお使いください。
+ * ・画像は公式利用規約の範囲でご利用ください。プログラム上での利用は規約に含まていませんので、ご注意ください。
+ * 宣伝：フォロー、動画視聴お願いします。
+ * https://www.nicovideo.jp/user/84757291/video
  */
+
 window.onload = ()=>{
   // 音楽を鳴らす準備
   var bgm = document.getElementById("bgm");
@@ -23,7 +34,6 @@ window.onload = ()=>{
   eye.src = "eye.png";
   kao.src = "kao.png";
   kaonade.src = "kaonade.png";
-
 
   // 画像の情報
   const kaoimgsize =[837,837]; // 顔の大きさ
@@ -60,47 +70,40 @@ window.onload = ()=>{
 
   // 目を描画させる関数
   function draweye(x,y){
-      var eyecenterpos = [eyeimgsize[0]/2, eyeimgsize[1]/2]; // 目画像の中心位置計算
-      var kaocenterpos = [kaoimgsize[0]/2, kaoimgsize[0]/2]; // 顔画像の中心位置計算
-      var eyeposdef = [kaocenterpos[0] - eyecenterpos[0] + eyeposfix[0], kaocenterpos[1] - eyecenterpos[1] + eyeposfix[1]]; // 顔と目の中心を合わせる
-      var mouseamount = [x - kaocenterpos[0]+ mouseposfix[0], y - kaocenterpos[1] + mouseposfix[1]]; // マウスと顔の中心を合わせる
-      var eyepos = [eyeposdef[0] + (mouseamount[0] / mousemove[0]), eyeposdef[1] + (mouseamount[1] / mousemove[1])]; // マウスの移動量に合わせて目の位置を計算する
+    var eyecenterpos = [eyeimgsize[0]/2, eyeimgsize[1]/2]; // 目画像の中心位置計算
+    var kaocenterpos = [kaoimgsize[0]/2, kaoimgsize[0]/2]; // 顔画像の中心位置計算
+    var eyeposdef = [kaocenterpos[0] - eyecenterpos[0] + eyeposfix[0], kaocenterpos[1] - eyecenterpos[1] + eyeposfix[1]]; // 顔と目の中心を合わせる
+    var mouseamount = [x - kaocenterpos[0]+ mouseposfix[0], y - kaocenterpos[1] + mouseposfix[1]]; // マウスと顔の中心を合わせる
+    var eyepos = [eyeposdef[0] + (mouseamount[0] / mousemove[0]), eyeposdef[1] + (mouseamount[1] / mousemove[1])]; // マウスの移動量に合わせて目の位置を計算する
 
-      // 目の限界指定
-      if(eyepos[0] < 226){
-          eyepos[0] = 226;
-      } else if(eyepos[0] > 263){
-          eyepos[0] = 263;
-      }
-      if(eyepos[1] < 378){
-          eyepos[1] = 378;
-      } else if(eyepos[1] > 408){
-          eyepos[1] = 408;
-      }
-      
-      //　ナデナデ範囲内か
-      if (mouseon && y < 590 && y > 130 && x < 600 && x > 160) {
-          nadenade = true;
-      } else {
-          nadenade = false;
-      }
+    // 目の限界指定
+    if(eyepos[0] < 226){
+        eyepos[0] = 226;
+    } else if(eyepos[0] > 263){
+        eyepos[0] = 263;
+    }
+    if(eyepos[1] < 378){
+        eyepos[1] = 378;
+    } else if(eyepos[1] > 408){
+        eyepos[1] = 408;
+    }
 
-      // キャラクターの描画
-      context.clearRect(0, 0, 800, 800);
-      context.drawImage(eye, eyepos[0], eyepos[1]);
-      // ナデナデtrue?
-      if(nadenade) {
-          context.drawImage(kaonade, 0, 0);
-      } else {
-          context.drawImage(kao, 0, 0);
-      }
+    //　ナデナデ範囲内か
+    if (mouseon && y < 590 && y > 130 && x < 600 && x > 160) {
+        nadenade = true;
+    } else {
+        nadenade = false;
+    }
 
-
+    // キャラクターの描画
+    context.clearRect(0, 0, 800, 800);
+    context.drawImage(eye, eyepos[0], eyepos[1]);
+    // ナデナデtrue?
+    if(nadenade) {
+        context.drawImage(kaonade, 0, 0);
+    } else {
+        context.drawImage(kao, 0, 0);
+    }
   }
-
-  
-//const bgm = new Audio('music.mp3');
-//bgm.play();
-  
 }
 
