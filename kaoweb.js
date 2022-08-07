@@ -6,7 +6,7 @@
  * (https://progedu.github.io/webappcontest/2022/summer/entry/index.html)
  * お借りした素材：
  * BGM：https://youtu.be/8wdgZN2yCTU
- * 画像：春日部つむぎ公式素材(改変) https://tsukushinyoki10.wixsite.com/ktsumugiofficial
+ * 画像：春日部つむぎ公式素材(改変) https://tsumugi-official.studio.site/top
  * 利用規約：
  * ・バグ等ありましたらご連絡ください。
  * ・プログラム単体はご自由にお使いください。
