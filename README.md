@@ -6,6 +6,7 @@ https://dm2525.github.io/nnn2022summer/
 動くWEBページコンテスト2022夏　応募作品。  
 (https://progedu.github.io/webappcontest/2022/summer/entry/index.html)  
 このファイルは個人的開発メモも兼ねています。  
+(いつか頬っぺたぷにぷにしたい...)
 
 ***
 ### 目次
